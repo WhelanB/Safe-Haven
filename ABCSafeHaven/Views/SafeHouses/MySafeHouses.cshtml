@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ABCSafeHaven.Models.SafeHouse>
+
+@{
+    ViewBag.Title = "Index";
+}
+<style type="text/css">
+    .inline {
+        display: inline;
+    }
+
+    a, a:hover {
+        color: #000;
+        text-decoration: none;
+    }
+</style>
+
+<h2>My Safe Homes</h2>
+@if (Model.Count() == 0)
+{
+     <h4>You haven't created any Safe Homes yet</h4>
+}
+else
+{
+<ul class="list-unstyled">
+    @foreach (var item in Model.Reverse())
+    {
+        <li>
+            <a href="@Url.Action(@item.ID.ToString(), "SafeHouses/Details")">
+                <div class="card">
+
+                    <h4 class="inline"><b>@Html.DisplayFor(modelItem => item.owner) </b></h4><p class="inline"> <br /><b> Capacity:</b> @Html.DisplayFor(modelItem => item.capacity)</p>
+                    <br />
+
+                    <b>Address: </b>@Html.DisplayFor(modelItem => item.address)
+                    <br />
+                </div>
+            </a>
+
+        </li>
+
+    }
+   
+    
+</ul>
+}

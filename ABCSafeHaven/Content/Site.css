@@ -1,0 +1,55 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-inverse { 
+    background-color: #3D93A7 !important; 
+    text: #ffffff;
+}
+.card{
+    padding:1.5rem;
+    box-shadow:0 1px 2px #aaa;
+    background:white;
+    margin:0 1rem 1rem;
+    border-radius:3px;
+    user-select:none;
+    animation:fly-in-from-left .5s 1s ease both;
+    transform-origin:top left;
+}
+.card:hover{
+    padding:1.5rem;
+    box-shadow:0 5px 10px #aaa;
+    background:white;
+    margin:0 1rem 1rem;
+    border-radius:3px;
+    user-select:none;
+    animation:fly-in-from-left .5s 1s ease both;
+    transform-origin:top left;
+}
+    
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+*{
+    font-family: 'Kreon', serif !important;
+}
+
+.listItem{
+-webkit-box-shadow: 6px 9px 58px -25px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 9px 58px -25px rgba(0,0,0,0.75);
+box-shadow: 6px 9px 58px -25px rgba(0,0,0,0.75);
+padding-left : 15px;
+padding-top : 15px;
+}
